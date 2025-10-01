@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "MejaCreations",
-  description: "Virtual Assistant & Visual Creator & Writer",
+  description: "Portfolio and creative space",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="hr">
+    <html lang="en">
       <body>{children}</body>
     </html>
   );
 }
+
