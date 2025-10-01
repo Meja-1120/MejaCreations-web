@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@400;600&family=Cormorant+Upright:wght@400;600&display=swap');
+
+:root{
+  --bg-dark:#292929;
+  --bg-mid:#3c4045;
+  --ink:#faf9f6;
+  --mint:#b7e1cd;
+  --box:#453c66;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#111;color:#fff}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.header{background:var(--bg-dark);color:var(--ink);position:sticky;top:0;z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{width:48px;height:48px;object-fit:contain;border-radius:4px;background:#fff}
+.brand-text{line-height:1.2}
+.domain{font-family:"Allura", cursive;font-size:36px;color:var(--mint);text-decoration:none}
+.owner{font-family:"Playfair Display", serif;font-size:40px;color:var(--ink)}
+.title{font-family:"Cinzel Decorative", serif;font-size:20px;color:var(--ink)}
+.right{display:flex;align-items:center;gap:14px}
+.socials{display:flex;gap:10px}
+.icon{display:inline-flex;width:22px;height:22px;fill:var(--ink);opacity:.9}
+.icon svg{width:100%;height:100%}
+.icon:hover{opacity:1}
+.hamburger{width:36px;height:30px;background:transparent;border:1px solid #555;border-radius:6px;display:flex;flex-direction:column;justify-content:center;gap:4px;padding:4px;cursor:pointer}
+.hamburger span{display:block;height:2px;background:#ddd}
+.nav{display:none;gap:18px}
+.nav a{color:#eaeaea;text-decoration:none;font-family:"Playfair Display",serif}
+.nav.open{display:flex}
+@media(min-width:900px){ .hamburger{display:none} .nav{display:flex} }
+.quote-en{font-family:"Cinzel Decorative", serif;font-size:20px;margin:0 0 6px}
+.quote-hr{font-family:"Cormorant Upright", serif;font-size:20px;margin:10px 0 0}
+.quote-author{font-family:"Cinzel Decorative", serif;font-size:15px;text-decoration:underline;margin:0 0 10px}
+.hero{position:relative}
+.hero-image{height:60vh;background:url('/story.jpg') center/cover no-repeat,#222}
+.overlay-box{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--box);color:#fff;padding:28px 32px;border-radius:12px;max-width:720px;width:90%;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.overlay-box h2{margin:0 0 10px;font-family:"Playfair Display", serif}
+.slogan{font-family:"Playfair Display", serif;line-height:1.5;margin:0 0 18px}
+.cta{display:inline-block;background:#3c4045;color:#faf9f6;text-decoration:none;padding:10px 16px;border-radius:8px;font-family:"Cormorant Garamond", serif;font-size:12px;letter-spacing:.5px}
